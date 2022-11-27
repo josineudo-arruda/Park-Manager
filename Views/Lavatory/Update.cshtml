@@ -1,0 +1,50 @@
+@model Lavatory
+
+@{
+    ViewData["Title"] = "Atualizar Lavatório";
+}
+
+<div class="text-center container">
+    <h1>Atualize um elemento</h1>
+    <p class="center" style="margin-bottom: 45px;">Atualize o lavatório selecionado:</p>
+    <form asp-controller="Lavatory" asp-action="Update" asp-route-id="@Model.Id" method="post">
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Id" class="col-sm-2 col-form-label">Id</label>
+            <div class="col-sm-10">
+                <input type="text" readonly value="@Model.Id" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="Id" id="Id">
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="NumberOfBooths" class="col-sm-2 col-form-label">Número de cabines</label>
+            <div class="col-sm-10">
+                <input type="text" value="@Model.NumberOfBooths" asp-for="NumberOfBooths" id="NumberOfBooths" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" >
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Mirror" class="col-sm-2 col-form-label">Tem espelho?</label>
+            <div class="col-sm-10">
+                <input type="radio" asp-for="Mirror" value="sim">Sim
+                <input type="radio" asp-for="Mirror" value="não">Não
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="ToiletPaper" class="col-sm-2 col-form-label">Tem papel higiênico?</label>
+            <div class="col-sm-10">
+                <input type="radio" asp-for="ToiletPaper" value="sim">Sim
+                <input type="radio" asp-for="ToiletPaper" value="não">Não
+            </div>
+        </div>
+        <div style="margin-top:10px"  class="form-group row">
+            <label asp-for="Localization" class="col-sm-2 col-form-label">Localização</label>
+            <div class="col-sm-10">
+                <select class="form-control" asp-for="Localization" id="Localization">
+                    <option selected value="">Selecione</option>
+                    <option value="PD - parte superior">Parque de diversão - parte superior</option>
+                    <option value="PD - parte inferior">Parque de diversão - parte inferior</option>
+                    <option value="PA - parte superior">Parque aquático - parte superior</option>
+                    <option value="PA - parte inferior">Parque aquático - parte inferior</option>
+                </select>
+            </div>
+        <input style="margin-top:20px; width:100%; padding: 10px" class="btn btn-success" type="submit" value="Atualizar">
+    </form>
+</div>

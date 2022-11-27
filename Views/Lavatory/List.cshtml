@@ -1,0 +1,46 @@
+@model IEnumerable<AdministracaoShrekPark.Models.Lavatory>
+
+@{
+    ViewData["Title"] = "Lavatórios";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum lavatório cadastrado</p>
+    <a class="btn btn-primary btn-sm"asp-controller="Lavatory" asp-action="Create">Crie</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Número de cabines</th>
+                <th>Tem papel higiênico?</th>
+                <th>Tem espelho?</th>
+                <th>Localização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var lavatory in Model)
+            {
+                <tr>
+                    <td>@lavatory.Id</td>
+                    <td>@lavatory.NumberOfBooths</td>
+                    <td>@lavatory.ToiletPaper</td>
+                    <td>@lavatory.Mirror</td>
+                    <td>@lavatory.Localization</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"asp-controller="Lavatory" asp-action="Show" asp-route-id="@lavatory.Id">Mostrar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="Lavatory" asp-action="Update" asp-route-id="@lavatory.Id">Atulizar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="Lavatory" asp-action="Delete" asp-route-id="@lavatory.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="Lavatory" asp-action="Create">Crie</a>
+}
