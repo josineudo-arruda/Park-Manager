@@ -10,16 +10,16 @@ USE estudante;
 CREATE TABLE IF NOT EXISTS Lavatories (
 	Id int NOT NULL PRIMARY KEY,
 	Localization varchar(25) NOT NULL,
-    NumberOfBooths int,
-    Mirror varchar(3),
+    	NumberOfBooths int,
+    	Mirror varchar(3),
 	ToiletPaper varchar(3)
 );
 
 CREATE TABLE IF NOT EXISTS Stores (
 	Id int NOT NULL PRIMARY KEY,
-    Brand varchar(25) NOT NULL,
-    Type varchar(25),
-    Localization varchar(25) NOT NULL
+    	Brand varchar(25) NOT NULL,
+    	Type varchar(25),
+    	Localization varchar(25) NOT NULL
 );
 
 INSERT INTO Lavatories VALUES (1, 'PT - parte inferior', 3, 'sim','não');
