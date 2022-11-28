@@ -19,9 +19,9 @@ public class AquaticFunFairToy
     [StringLength(3)]
     public string NumberOfSlides { get; set; }
 
-    public Lavatory() {}
+    public AquaticFunFairToy() {}
 
-    public Lavatory(int id, string localization, int numberOfPedalBoats, string numberOfFountains, string numberOfSlides)
+    public AquaticFunFairToy(int id, string localization, int numberOfPedalBoats, string numberOfFountains, string numberOfSlides)
     {
         Id = id;
         Localization = localization;

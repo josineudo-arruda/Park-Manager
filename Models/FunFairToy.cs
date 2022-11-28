@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AdministracaoShrekPark.Models;
 
-public class FunFairToys
+public class FunFairToy
 {   
     [Required]
     public int Id { get; set; }
@@ -19,9 +19,9 @@ public class FunFairToys
     [StringLength(3)]
     public string NumberOfRollerCoasters { get; set; }
 
-    public Lavatory() {}
+    public FunFairToy() {}
 
-    public Lavatory(int id, string localization, int numberOfCarousels, string numberOfBumperCars, string numberOfRollerCoasters)
+    public FunFairToy(int id, string localization, int numberOfCarousels, string numberOfBumperCars, string numberOfRollerCoasters)
     {
         Id = id;
         Localization = localization;

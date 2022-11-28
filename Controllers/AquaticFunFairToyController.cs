@@ -3,18 +3,18 @@ using AdministracaoShrekPark.Models;
 
 namespace AdministracaoShrekPark.Controllers;
 
-public class AquaticFunFairToy : Controller
+public class AquaticFunFairToyController : Controller
 {
     private readonly ShrekParkManagerContext _context;
 
-    public AquaticFunFairToy (ShrekParkManagerContext context)
+    public AquaticFunFairToyController (ShrekParkManagerContext context)
     {
         _context = context;
     }
 
     public IActionResult List()
     {
-        return View(_context.AquaticFunFairToy);
+        return View(_context.AquaticFunFairToys);
     }
 
     public IActionResult Show(int id)

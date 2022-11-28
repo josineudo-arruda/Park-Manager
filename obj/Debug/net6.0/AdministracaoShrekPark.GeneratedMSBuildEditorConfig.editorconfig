@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdministracaoShrekPark
 build_property.RootNamespace = AdministracaoShrekPark
-build_property.ProjectDir = C:\Users\DELL\ShrekParkManager\
+build_property.ProjectDir = C:\Users\JosineudoArruda\Documents\TERCEIRO ANO IFSP\Técnico\LGC3\MvcLabManager\ShrekParkManager\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DELL\ShrekParkManager
+build_property.MSBuildProjectDirectory = C:\Users\JosineudoArruda\Documents\TERCEIRO ANO IFSP\Técnico\LGC3\MvcLabManager\ShrekParkManager
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Home/Index.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Home/Privacy.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Lavatory/Create.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Lavatory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YXRvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Lavatory/Delete.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Lavatory/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YXRvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Lavatory/List.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Lavatory/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YXRvcnlcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Lavatory/Show.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Lavatory/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YXRvcnlcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Lavatory/Update.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Lavatory/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF2YXRvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Shared/Error.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Store/Create.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Store/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Store/Delete.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Store/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Store/List.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Store/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Store/Show.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Store/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Store/Update.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Store/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/_ViewImports.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/_ViewStart.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/ShrekParkManager/Views/Shared/_Layout.cshtml]
+[C:/Users/JosineudoArruda/Documents/TERCEIRO ANO IFSP/Técnico/LGC3/MvcLabManager/ShrekParkManager/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-iejmpvf3vp
