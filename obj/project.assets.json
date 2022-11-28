@@ -1397,19 +1397,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JosineudoArruda\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\AdministracaoShrekPark.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\ShrekParkManager\\AdministracaoShrekPark.csproj",
       "projectName": "AdministracaoShrekPark",
-      "projectPath": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\AdministracaoShrekPark.csproj",
-      "packagesPath": "C:\\Users\\JosineudoArruda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\ShrekParkManager\\AdministracaoShrekPark.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\ShrekParkManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JosineudoArruda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
