@@ -1,0 +1,44 @@
+@model IEnumerable<AdministracaoShrekPark.Models.Nursery>
+
+@{
+    ViewData["Title"] = "Enfermaria";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhuma enfermaria cadastrada</p>
+    <a class="btn btn-primary btn-sm"asp-controller="Nursery" asp-action="Create">Crie</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Leitos</th>
+                <th>Localização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var nursery in Model)
+            {
+                <tr>
+                    <td>@nursery.Id</td>
+                    <td>@nursery.Name</td>
+                    <td>@nursery.Leitos</td>
+                    <td>@nursery.Localization</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"asp-controller="Nursery" asp-action="Show" asp-route-id="@nursery.Id">Mostrar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="Nursery" asp-action="Update" asp-route-id="@nursery.Id">Atulizar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="Nursery" asp-action="Delete" asp-route-id="@nursery.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="nursery" asp-action="Create">Crie</a>
+}

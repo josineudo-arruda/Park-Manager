@@ -1397,24 +1397,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JosineudoArruda\\.nuget\\packages\\": {}
+    "C:\\Users\\Samsung\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\AdministracaoShrekPark.csproj",
+      "projectUniqueName": "C:\\Users\\Samsung\\Desktop\\ShrekParkManager\\AdministracaoShrekPark.csproj",
       "projectName": "AdministracaoShrekPark",
-      "projectPath": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\AdministracaoShrekPark.csproj",
-      "packagesPath": "C:\\Users\\JosineudoArruda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JosineudoArruda\\Documents\\TERCEIRO ANO IFSP\\Técnico\\LGC3\\LP3 4bm\\AdministracaoShrekPark\\obj\\",
+      "projectPath": "C:\\Users\\Samsung\\Desktop\\ShrekParkManager\\AdministracaoShrekPark.csproj",
+      "packagesPath": "C:\\Users\\Samsung\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Samsung\\Desktop\\ShrekParkManager\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\JosineudoArruda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

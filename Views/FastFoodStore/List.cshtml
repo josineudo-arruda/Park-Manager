@@ -1,0 +1,46 @@
+@model IEnumerable<AdministracaoShrekPark.Models.FastFoodStore>
+
+@{
+    ViewData["Title"] = "Lanches";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum lanche cadastrado</p>
+    <a class="btn btn-primary btn-sm"asp-controller="FastFoodStore" asp-action="Create">Crie</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Número de lanches</th>
+                <th>É vegetariano?</th>
+                <th>Tem batata assada?</th>
+                <th>Localização</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var fastFoodStore in Model)
+            {
+                <tr>
+                    <td>@fastFoodStore.Id</td>
+                    <td>@fastFoodStore.NumberOfBooths</td>
+                    <td>@fastFoodStore.ToiletPaper</td>
+                    <td>@fastFoodStore.Mirror</td>
+                    <td>@fastFoodStore.Localization</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"asp-controller="FastFoodStore" asp-action="Show" asp-route-id="@fastFoodStore.Id">Mostrar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="FastFoodStore" asp-action="Update" asp-route-id="@fastFoodStore.Id">Atulizar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="FastFoodStore" asp-action="Delete" asp-route-id="@fastFoodStore.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="fastFoodStore" asp-action="Create">Crie</a>
+}

@@ -1,0 +1,12 @@
+@model AdministracaoShrekPark.Models.Nursery
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Enfermaria: @Model.Id</h1>
+<hr>
+<p>Nome: @Model.Name</p>
+<p>Leito: @Model.Leitos</p>
+<p>Localização: @Model.Localization</p>
+<a class="btn btn-primary btn-sm"asp-controller="Nursery" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+<hr>
