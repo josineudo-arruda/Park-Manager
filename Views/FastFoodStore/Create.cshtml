@@ -1,0 +1,50 @@
+@model FastFoodStore
+
+@{
+    ViewData["Title"] = "Cadastrar Lanche";
+}
+
+<div class="text-center container">
+    <h1>Criar elemento</h1>
+    <p class="center" style="margin-bottom: 45px;">Crie um novo lanche:</p>
+    <form asp-controller="FastFoodStore" asp-action="Create" method="post">
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Id" class="col-sm-2 col-form-label">Id</label>
+            <div class="col-sm-10">
+                <input type="text" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="Id" id="Id">
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="NumberOfFood" class="col-sm-2 col-form-label">Número de lanches</label>
+            <div class="col-sm-10">
+                <input type="text" asp-for="NumberOfFood" id="NumberOfFood" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" >
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Veggie" class="col-sm-2 col-form-label">É vegetariano?</label>
+            <div class="col-sm-10">
+                <input type="radio" asp-for="Veggie" value="sim">Sim
+                <input type="radio" asp-for="Veggie" value="não">Não
+            </div>
+        </div>
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Potato" class="col-sm-2 col-form-label">Tem batata assada?</label>
+            <div class="col-sm-10">
+                <input type="radio" asp-for="Potato" value="sim">Sim
+                <input type="radio" asp-for="Potato" value="não">Não
+            </div>
+        </div>
+        <div style="margin-top:10px"  class="form-group row">
+            <label asp-for="Localization" class="col-sm-2 col-form-label">Localização</label>
+            <div class="col-sm-10">
+                <select class="form-control" asp-for="Localization" id="Localization">
+                    <option selected value="">Selecione</option>
+                    <option value="PD - parte superior">Parque de diversão - parte superior</option>
+                    <option value="PD - parte inferior">Parque de diversão - parte inferior</option>
+                    <option value="PA - parte superior">Parque aquático - parte superior</option>
+                    <option value="PA - parte inferior">Parque aquático - parte inferior</option>
+                </select>
+            </div>
+        <input style="margin-top:20px; width:100%; padding: 10px" class="btn btn-success" type="submit" value="Criar">
+    </form>
+</div>
