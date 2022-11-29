@@ -13,10 +13,8 @@ public class FunFairToy
 
     public int NumberOfCarousels { get; set; }
 
-    [StringLength(3)]
     public string NumberOfBumperCars { get; set; }
 
-    [StringLength(3)]
     public string NumberOfRollerCoasters { get; set; }
 
     public FunFairToy() {}

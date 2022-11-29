@@ -81,9 +81,9 @@ public class AquaticFunFairToyController : Controller
         AquaticFunFairToy aquaticFunFairToy = _context.AquaticFunFairToys.Find(aquaticFunFairToyViewModel.Id);
         
         aquaticFunFairToy.Localization = aquaticFunFairToyViewModel.Localization;
-        aquaticFunFairToy.NumberOfBooths = aquaticFunFairToyViewModel.NumberOfBooths;
-        aquaticFunFairToy.Mirror = aquaticFunFairToyViewModel.Mirror;
-        aquaticFunFairToy.ToiletPaper = aquaticFunFairToyViewModel.ToiletPaper;
+        aquaticFunFairToy.NumberOfPedalBoats = aquaticFunFairToyViewModel.NumberOfPedalBoats;
+        aquaticFunFairToy.NumberOfFountains = aquaticFunFairToyViewModel.NumberOfFountains;
+        aquaticFunFairToy.NumberOfSlides = aquaticFunFairToyViewModel.NumberOfSlides;
         _context.SaveChanges();
         return RedirectToAction("List");
     }

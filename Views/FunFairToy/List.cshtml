@@ -33,13 +33,13 @@ else
                     <td>@funFairToys.NumberOfRollerCoasters</td>
                     <td>@funFairToys.Localization</td>
                     <td>
-                        <a class="btn btn-primary btn-sm"asp-controller="funFairToys" asp-action="Show" asp-route-id="@funFairToys.Id">Mostrar</a>
-                        <a class="btn btn-primary btn-sm"asp-controller="funFairToys" asp-action="Update" asp-route-id="@funFairToys.Id">Atulizar</a>
-                        <a class="btn btn-primary btn-sm"asp-controller="funFairToys" asp-action="Delete" asp-route-id="@funFairToys.Id">Excluir</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="funFairToy" asp-action="Show" asp-route-id="@funFairToys.Id">Mostrar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="funFairToy" asp-action="Update" asp-route-id="@funFairToys.Id">Atulizar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="funFairToy" asp-action="Delete" asp-route-id="@funFairToys.Id">Excluir</a>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
-    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="funFairToys" asp-action="Create">Crie</a>
+    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="funFairToy" asp-action="Create">Crie</a>
 }

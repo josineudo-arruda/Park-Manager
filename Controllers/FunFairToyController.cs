@@ -81,9 +81,9 @@ public class FunFairToyController : Controller
         FunFairToy funFairToys = _context.FunFairToys.Find(funFairToyViewModel.Id);
         
         funFairToys.Localization = funFairToyViewModel.Localization;
-        funFairToys.NumberOfBooths = funFairToyViewModel.NumberOfBooths;
-        funFairToys.Mirror = funFairToyViewModel.Mirror;
-        funFairToys.ToiletPaper = funFairToyViewModel.ToiletPaper;
+        funFairToys.NumberOfCarousels = funFairToyViewModel.NumberOfCarousels;
+        funFairToys.NumberOfBumperCars = funFairToyViewModel.NumberOfBumperCars;
+        funFairToys.NumberOfRollerCoasters = funFairToyViewModel.NumberOfRollerCoasters;
         _context.SaveChanges();
         return RedirectToAction("List");
     }

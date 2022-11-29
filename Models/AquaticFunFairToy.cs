@@ -13,10 +13,8 @@ public class AquaticFunFairToy
 
     public int NumberOfPedalBoats { get; set; }
 
-    [StringLength(3)]
     public string NumberOfFountains { get; set; }
 
-    [StringLength(3)]
     public string NumberOfSlides { get; set; }
 
     public AquaticFunFairToy() {}
