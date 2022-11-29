@@ -1,0 +1,52 @@
+@model FunFairToy
+
+@{
+    ViewData["Title"] = "Cadastrar Brinquedo no Parque";
+}
+
+<div class="text-center container">
+    <h1>Criar elemento</h1>
+    <p class="center" style="margin-bottom: 45px;">Crie um novo brinquedo no parque:</p>
+    <form asp-controller="Store" asp-action="Create" method="post">
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="Id" class="col-sm-2 col-form-label">Id</label>
+            <div class="col-sm-10">
+                <input type="text" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="Id" id="Id">
+            </div>
+        </div>
+
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="NumberOfCarousels  " class="col-sm-2 col-form-label">Carrossel: </label>
+            <div class="col-sm-10">
+                <input type="text" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="NumberOfCarousels " id="NumberOfCarousels ">
+            </div>
+        </div>
+
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="NumberOfBumperCars " class="col-sm-2 col-form-label">Carrinho bate-bate: </label>
+            <div class="col-sm-10">
+                <input type="text" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="NumberOfBumperCars " id="NumberOfBumperCars ">
+            </div>
+        </div>
+
+        <div style="margin-top:10px"class="form-group row">
+            <label asp-for="NumberOfRollerCoasters " class="col-sm-2 col-form-label">Montanha russa: </label>
+            <div class="col-sm-10">
+                <input type="text" style="border: .2px solid black; border-radius:5px; text-align:center;"class="form-control-plaintext" asp-for="NumberOfRollerCoasters " id="NumberOfRollerCoasters ">
+            </div>
+        </div>
+
+        <div style="margin-top:10px"  class="form-group row">
+            <label asp-for="Localization" class="col-sm-2 col-form-label">Localização</label>
+            <div class="col-sm-10">
+                <select class="form-control" asp-for="Localization" id="Localization">
+                    <option selected value="">Selecione</option>
+                    <option value="PD - parte superior">Parque de diversão - parte superior</option>
+                    <option value="PD - parte inferior">Parque de diversão - parte inferior</option>
+                    <option value="PA - parte superior">Parque aquático - parte superior</option>
+                    <option value="PA - parte inferior">Parque aquático - parte inferior</option>
+                </select>
+            </div>
+        <input style="margin-top:20px; width:100%; padding: 10px" class="btn btn-success" type="submit" value="Criar">
+    </form>
+</div>

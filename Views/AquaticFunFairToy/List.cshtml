@@ -1,0 +1,45 @@
+@model IEnumerable<AdministracaoShrekPark.Models.AquaticFunFairToy>
+
+@{
+    ViewData["Title"] = "BrinquedoParqueAquático";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum brinquedo cadastrado</p>
+    <a class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Create">Crie</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Quantidade de escorregadores</th>
+                <th>Quantidade de pedalinhos</th>
+                <th>Quantidade de fontes</th>
+                <th>Localização</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var aquaticFunFairToy in Model)
+            {
+                <tr>
+                    <td>@aquaticFunFairToy.Id</td>  
+                    <td>@aquaticFunFairToy.NumberOfSlides</td>
+                    <td>@aquaticFunFairToy.NumberOfPedalBoats</td>
+                    <td>@aquaticFunFairToy.NumberOfFountains</td>
+                    <td>@aquaticFunFairToy.Localization</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Show" asp-route-id="@aquaticFunFairToy.Id">Mostrar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Update" asp-route-id="@aquaticFunFairToy.Id">Atulizar</a>
+                        <a class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Delete" asp-route-id="@aquaticFunFairToy.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a style="width:100%; padding: 10px;"class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Create">Crie</a>
+}
