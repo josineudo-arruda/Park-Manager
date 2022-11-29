@@ -45,14 +45,14 @@ public class NurseryController : Controller
 
         if(_context.Nurseries.Find(nurseryViewModel.Id) == null)
         {
-            Nursery nursery = new Nursery(nurseryViewModel.Id,nurseryViewModel.Brand,nurseryViewModel.Type,nurseryViewModel.Localization);
+            Nursery nursery = new Nursery(nurseryViewModel.Id,nurseryViewModel.Name,nurseryViewModel.Leitos,nurseryViewModel.Localization);
             _context.Nurseries.Add(nursery);
             _context.SaveChanges();
             return RedirectToAction("Create");
         }
         else
         {
-            return Content("Loja já criada no banco de dados do parque, tente outro id");
+            return Content("Enfermaria já criada no banco de dados do parque, tente outro id");
         }
     }
 
@@ -62,7 +62,7 @@ public class NurseryController : Controller
 
         if(nursery == null)
         {
-            return Content("Loja não existente, crie com este id ou tente outro");
+            return Content("Enfermaria não existente, crie com este id ou tente outro");
         }
         else
         {
@@ -80,8 +80,8 @@ public class NurseryController : Controller
 
         Nursery nursery = _context.Nurseries.Find(nurseryViewModel.Id);
         
-        nursery.Brand = nurseryViewModel.Brand;
-        nursery.Type = nurseryViewModel.Type;
+        nursery.Brand = nurseryViewModel.Name;
+        nursery.Type = nurseryViewModel.Leitos;
         nursery.Localization = nurseryViewModel.Localization;
         _context.SaveChanges();
         return RedirectToAction("List"); 

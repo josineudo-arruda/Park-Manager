@@ -45,14 +45,14 @@ public class FastFoodStore : Controller
 
         if(_context.FastFoodStores.Find(fastFoodStoreViewModel.Id) == null)
         {
-            FastFoodStores fastFoodStore = new FastFoodStore(fastFoodStoreViewModel.Id,fastFoodStoreViewModel.Localization,fastFoodStoreViewModel.NumberOfBooths,fastFoodStoreViewModel.Mirror,fastFoodStoreViewModel.ToiletPaper);
+            FastFoodStores fastFoodStore = new FastFoodStore(fastFoodStoreViewModel.Id,fastFoodStoreViewModel.Localization,fastFoodStoreViewModel.NumberOfFood,fastFoodStoreViewModel.Veggie,fastFoodStoreViewModel.Potato);
             _context.FastFoodStores.Add(fastFoodStore);
             _context.SaveChanges();
             return RedirectToAction("Create");
         }
         else
         {
-            return Content("Lavatório já criado no banco de dados do parque, tente outro id");
+            return Content("Lanche já criado no banco de dados do parque, tente outro id");
         }
     }
 
@@ -62,7 +62,7 @@ public class FastFoodStore : Controller
 
         if(fastFoodStore == null)
         {
-            return Content("Lavatório não existente, crie com este id ou tente outro");
+            return Content("Lanche não existente, crie com este id ou tente outro");
         }
         else
         {
@@ -81,9 +81,9 @@ public class FastFoodStore : Controller
         FastFoodStore fastFoodStore = _context.FastFoodStores.Find(fastFoodStoreViewModel.Id);
         
         fastFoodStore.Localization = fastFoodStoreViewModel.Localization;
-        fastFoodStore.NumberOfBooths = fastFoodStoreViewModel.NumberOfBooths;
-        fastFoodStore.Mirror = fastFoodStoreViewModel.Mirror;
-        fastFoodStore.ToiletPaper = fastFoodStoreViewModel.ToiletPaper;
+        fastFoodStore.NumberOfFood = fastFoodStoreViewModel.NumberOfFood;
+        fastFoodStore.Veggie = fastFoodStoreViewModel.Veggie;
+        fastFoodStore.Potato = fastFoodStoreViewModel.Potato;
         _context.SaveChanges();
         return RedirectToAction("List");
     }
