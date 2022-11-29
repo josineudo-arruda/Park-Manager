@@ -1,0 +1,13 @@
+@model AdministracaoShrekPark.Models.AquaticFunFairToy
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Brinquedo: @Model.Id</h1>
+<hr>
+<p>Escorregador: @Model.NumberOfSlides</p>
+<p>Pedalinho: @Model.NumberOfPedalBoats</p>
+<p>Fonte: @Model.NumberOfFountains</p>
+<p>Localização: @Model.Localization</p>
+<a class="btn btn-primary btn-sm"asp-controller="AquaticFunFairToy" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+<hr>
