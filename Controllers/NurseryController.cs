@@ -80,8 +80,8 @@ public class NurseryController : Controller
 
         Nursery nursery = _context.Nurseries.Find(nurseryViewModel.Id);
         
-        nursery.Brand = nurseryViewModel.Name;
-        nursery.Type = nurseryViewModel.Leitos;
+        nursery.Name = nurseryViewModel.Name;
+        nursery.Leitos = nurseryViewModel.Leitos;
         nursery.Localization = nurseryViewModel.Localization;
         _context.SaveChanges();
         return RedirectToAction("List"); 

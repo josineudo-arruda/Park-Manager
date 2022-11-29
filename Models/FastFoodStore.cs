@@ -25,7 +25,7 @@ public class FastFoodStore
     {
         Id = id;
         Localization = localization;
-        NumberOfFood = numberOffood;
+        NumberOfFood = numberOfFood;
         Veggie = veggie;
         Potato = potato;
     }

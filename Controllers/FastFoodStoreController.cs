@@ -3,11 +3,11 @@ using AdministracaoShrekPark.Models;
 
 namespace AdministracaoShrekPark.Controllers;
 
-public class FastFoodStore : Controller
+public class FastFoodStoreController : Controller
 {
     private readonly ShrekParkManagerContext _context;
 
-    public FastFoodStore (ShrekParkManagerContext context)
+    public FastFoodStoreController (ShrekParkManagerContext context)
     {
         _context = context;
     }
@@ -45,7 +45,7 @@ public class FastFoodStore : Controller
 
         if(_context.FastFoodStores.Find(fastFoodStoreViewModel.Id) == null)
         {
-            FastFoodStores fastFoodStore = new FastFoodStore(fastFoodStoreViewModel.Id,fastFoodStoreViewModel.Localization,fastFoodStoreViewModel.NumberOfFood,fastFoodStoreViewModel.Veggie,fastFoodStoreViewModel.Potato);
+            FastFoodStore fastFoodStore = new FastFoodStore(fastFoodStoreViewModel.Id,fastFoodStoreViewModel.Localization,fastFoodStoreViewModel.NumberOfFood,fastFoodStoreViewModel.Veggie,fastFoodStoreViewModel.Potato);
             _context.FastFoodStores.Add(fastFoodStore);
             _context.SaveChanges();
             return RedirectToAction("Create");
