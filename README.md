@@ -1,4 +1,4 @@
-# ShrekParkManager
+# Park Manager
 
 Para rodar o código é necesário criar a tabela e inserir os dados no MySQL, a seguir o código do banco de dados:
 
